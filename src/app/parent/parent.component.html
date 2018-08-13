@@ -1,0 +1,9 @@
+<p>
+  parent works! {{ title }}
+</p>
+
+<input type="checkbox" #element (change)="setParentBox(element)" value="true">
+{{ status }}
+<div>
+  <app-child *ngFor="let task of tasks" [task]="task"></app-child>
+</div>
